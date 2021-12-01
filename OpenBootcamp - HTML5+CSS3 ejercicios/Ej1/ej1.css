@@ -22,6 +22,7 @@
     padding: 10px;
     border-radius: 20px;
     background-color: #111;
+    border: 5px ridge white;
 }
 
 .h2{
@@ -30,14 +31,19 @@
     text-align: center;
 }
 
-.container__ordered{
-    /*
+.container__ordered ,.container__disordered{
     display: grid;
     justify-content: center;
-    margin: 20px;
-    */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: grey;
+    
+}
+.container__ordered__ol, .container__disordered__ul{
+    background: linear-gradient(90deg, rgb(114, 114, 114), rgb(192, 192, 192));
+    margin: 15px 0px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 5px ridge rgba(255, 0, 0, 0.9);;
+}
+
+.container__disordered__ul--background{
+    background: linear-gradient(90deg, rgb(192, 192, 192), rgb(114, 114, 114));
 }
