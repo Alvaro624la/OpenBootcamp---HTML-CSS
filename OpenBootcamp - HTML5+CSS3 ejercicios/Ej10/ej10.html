@@ -26,17 +26,18 @@
     <title>Alvaro Ej10 - HTML/CSS (with BEM) OpenBootcamp</title>
 </head>
 <body class="body">
-    <header>
+    <header class="body__header">
+        <h1 class="body__header__h1">Exercise 10</h1>
     </header>
-    <nav>
-    </nav>
-    <main>
-        <article>
-            <section>
-            </section>
+    <main class="body__main">
+        <article class="body__main__cuadrado-container">
+            <div class="body__main__cuadrado-container__cuadrado"></div>
         </article>
-        <aside>
-        </aside>
+        <article class="body__main__video-container">
+            <video class="body__main__cuadrado-container__video" src="wolf.mp4" preload="auto" autoplay muted allowfullscreen loop>
+            </video>
+            <img class="body__main__video-container__fallback" src="wolf-poster.jpg">  
+        </article>
     </main>
     <footer class="footer-ext">
         <h3 class="footer-ext__title">
