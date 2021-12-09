@@ -9,7 +9,7 @@
   text-align: center;
 }
 .body{
-  background-image: url("bg.jpg");
+  background-image: url("bg.svg");
   background-size: cover;
 }
 .body__main__article{
@@ -30,17 +30,21 @@
   grid-area: bar;
   margin-top: 150px;
 }
+.progress-p{
+  color: white;
+}
 .progress-bar{
   width: 10%;
   /*animation-name: progreso;
   animation-duration: 2s;
-  animation-delay: 1s;
+  animation-delay: 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;*/
 }
 .progress-bar:hover{
   width: 100%;
   transition: 2s;
+  background-color: green;
 }
 /*@-webkit-keyframes progreso {
   0%{
