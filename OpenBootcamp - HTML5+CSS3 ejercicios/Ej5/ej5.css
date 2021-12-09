@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif, Helvetica, Arial
+}
+.body{
+  background: linear-gradient(180deg, #0ea, rgb(0, 238, 91), rgb(0, 222, 238));
+}
+.main__article{
+  display: grid;
+  justify-content: center;
+  margin: 200px 0px;
+}
+.main__article__galeria{
+  background: linear-gradient(180deg, rgba(0, 225, 255, 0.5), rgba(0, 140, 255, 0.5));
+  border: 5px double black;
+  position: relative;
+  width: 200px;
+  height: 330px;
+}
+
+.main__article__galeria__input{
+  position: relative;
+  top: 92%;
+  left: 35%;
+}
+.main__article__galeria__img{
+  border-radius: 6px;
+  margin: 5px;
+  max-width: 95%;
+  max-height: 88%;
+  overflow: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.main__article__galeria__input:nth-of-type(1):checked ~ .main__article__galeria__img:nth-of-type(1){
+  opacity: 1;
+}
+.main__article__galeria__input:nth-of-type(2):checked ~ .main__article__galeria__img:nth-of-type(2){
+  opacity: 1;
+}
+.main__article__galeria__input:nth-of-type(3):checked ~ .main__article__galeria__img:nth-of-type(3){
+  opacity: 1;
+}
+.main__article__galeria__input:nth-of-type(4):checked ~ .main__article__galeria__img:nth-of-type(4){
+  opacity: 1;
+}
+
+/*FOOTER*/
+.footer-ext{
+  background: linear-gradient(180deg, rgb(160, 160, 160), rgb(95, 95, 95));
+  border-top: 1.5px solid black;
+  padding: 30px 45px;
+  margin-top: 50px;
+}
+.footer-ext__title{
+  text-align: left;
+}
+.footer{
+  padding: 20px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.footer__email, .footer__phone, .footer__linkedin, .footer__github{
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  padding: 5px;
+  transition: 0.2s;
+}
+.footer__email:hover, .footer__phone:hover, .footer__linkedin:hover, .footer__github:hover{
+  filter: drop-shadow(0px 0px 10px rgba(226, 226, 226, 0.9));
+  cursor: pointer;
+  transition: 0.1s;
+}
+.footer__email__link{
+  color: rgb(202, 55, 55);
+}
+.footer__phone__link{
+  color: rgb(0, 255, 0);
+}
+.footer__linkedin__link{
+  color: rgb(0, 120, 212);
+}
+.footer__github__link{
+  color: rgb(0, 0, 0);
+}
+
+/*@media queries*/
+@media (max-width:801px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:600px){
+  .main__article{
+    display: grid;
+    justify-content: center;
+    margin: 100px 0px;
+  }
+
+  .footer__email, .footer__phone, .footer__linkedin, .footer__github{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
